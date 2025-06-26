@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectors</title>
+
+    <!-- <style>
+        /* Element Selector : */
+        div{
+            background-color: red;
+        }
+    </style> -->
+
+    <style>
+        /* Id Selector */
+        #red {
+            background-color: red;
+        }
+
+        /* Class Selector */
+        .green {
+            background-color: green;
+        }
+
+        /* Child Selector */
+        div>p {
+            color: aqua;
+            background-color: blueviolet;
+        }
+
+        /*Descendant Selector */
+        div p {
+            color: blue;
+            background-color: yellow;
+        }
+
+        /* Universal Selector */
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Pseudo Selector  */
+        a:link {
+            color: pink;
+        }
+
+        a:visited {
+            color: red;
+        }
+
+        a:active {
+            background-color: blueviolet;
+        }
+
+        a:hover {
+            background-color: yellow;
+        }
+
+        p:first-child {
+            color: red;
+            background-color: yellowgreen;
+        }
+    </style>
+
+
+</head>
+
+<body>
+    <div id="red">I am a red div
+        <!-- <p>I am a para within a div</p> -->
+    </div>
+
+    <div class="green">I am another green div
+        <article>
+            <p>I am a para within article which is inside a div</p>
+        </article>
+    </div>
+
+    <a target="_blank" href="https://www.google.com">Go to Google</a>
+    <a target="_blank" href="https://www.facebook.com">Go to Facebook</a>
+    <a target="_blank" href="https://www.quora.com">Go to Quora</a>
+
+    <main>
+        <p>I am first</p>
+        <p>I am second</p>
+    </main>
+</body>
+
+</html>
