@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* The specificity of element selector is 1 */
+        h1 {
+            color: brown;
+        }
+
+        /* The specificity of class selector is 1 + 10 = 11 */
+        h1.yellow {
+            color: yellow;
+        }
+
+        /* The specificity of class selector is 10 */
+        .red {
+            color: red !important;
+        }
+
+        /* The specificity of class selector is 10 */
+        .purple {
+            color: purple;
+        }
+
+        /* The specificity of attribute selector is 10 */
+        [data-x=a] {
+            color: rgb(120, 37, 37);
+        }
+
+        /* Quiz */
+        /* The specificity of this is 1 + 10 + 10 + 10 + 10 = 41  */
+        a.harryclass.rohan-class[href]:hover {
+            color: pink;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- https://www.codewithharry.com/tutorial/css-specificity -->
+    <div>
+        <h1 class="yellow red purple" data-x="a">CSS Specificity</h1>
+        <p>Inline Style > ID Selector > Class or Attribute Selector > Element Selector > Universal Selector</p>
+    </div>
+</body>
+
+</html>
